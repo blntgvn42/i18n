@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit'
+import {configureStore} from '@reduxjs/toolkit'
 import languageReducer from './feature/language/languageSlice'
 import themeReducer from './feature/theme/themeSlice'
 

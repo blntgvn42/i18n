@@ -1,9 +1,9 @@
-import { default as i18n, default as i18next } from "i18next";
-import type { PayloadAction } from '@reduxjs/toolkit';
-import { createSlice } from '@reduxjs/toolkit';
+import {default as i18n, default as i18next} from "i18next";
+import type {PayloadAction} from '@reduxjs/toolkit';
+import {createSlice} from '@reduxjs/toolkit';
 import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from 'i18next-http-backend';
-import { initReactI18next } from 'react-i18next';
+import {initReactI18next} from 'react-i18next';
 
 
 export interface LanguageState {
@@ -40,6 +40,6 @@ export const languageSlice = createSlice({
     },
 })
 
-export const { changeLanguage } = languageSlice.actions
+export const {changeLanguage} = languageSlice.actions
 
 export default languageSlice.reducer
