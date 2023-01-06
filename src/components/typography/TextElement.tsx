@@ -1,7 +1,7 @@
-import { Typography } from 'antd'
-import { BlockProps } from 'antd/es/typography/Base';
+import {Typography} from 'antd'
+import {BlockProps} from 'antd/es/typography/Base';
 
-const { Text } = Typography;
+const {Text} = Typography;
 
 function TextElement(props: BlockProps) {
     return (

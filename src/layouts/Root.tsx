@@ -3,7 +3,6 @@ import { Content, Footer, Header } from 'antd/es/layout/layout'
 import { useSelector } from 'react-redux'
 import { Outlet } from 'react-router-dom'
 import Navbar from '../components/navbar/Navbar'
-import TextElement from '../components/typography/TextElement'
 import { RootState } from '../store'
 
 function Root() {
@@ -25,9 +24,7 @@ function Root() {
                 <Content>
                     <Outlet />
                 </Content>
-                <Footer>
-                    <Navbar />
-                </Footer>
+                <Footer></Footer>
             </Layout>
         </ConfigProvider>
     )

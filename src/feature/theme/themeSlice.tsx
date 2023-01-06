@@ -1,5 +1,5 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit"
-import { MenuTheme } from "antd"
+import {createSlice, PayloadAction} from "@reduxjs/toolkit"
+import {MenuTheme} from "antd"
 
 export interface ThemeState {
     selectedTheme: MenuTheme,
@@ -26,6 +26,6 @@ export const themeSlice = createSlice({
     },
 })
 
-export const { getTheme, changeTheme } = themeSlice.actions
+export const {getTheme, changeTheme} = themeSlice.actions
 
 export default themeSlice.reducer
