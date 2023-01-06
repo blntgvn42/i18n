@@ -1,0 +1,32 @@
+{
+    "navbar": {
+        "home-page": "Ana Sayfa",
+        "about-page": "Hakkımızda",
+        "change-language": "Dili Değiştir",
+        "change-theme": "Tema Değiştir"
+    },
+    "language": {
+        "english": {
+            "code": "gb",
+            "title": "İngilizce"
+        },
+        "spanish": {
+            "code": "es",
+            "title": "İspanyolca"
+        },
+        "turkish": {
+            "code": "tr",
+            "title": "Türkçe"
+        }
+    },
+    "theme": {
+        "light": {
+            "code": "light",
+            "value": "Açık"
+        },
+        "dark": {
+            "code": "dark",
+            "value": "Koyu"
+        }
+    }
+}

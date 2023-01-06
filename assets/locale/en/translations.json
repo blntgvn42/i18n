@@ -1,0 +1,32 @@
+{
+    "navbar": {
+        "home-page": "Home Page",
+        "about-page": "About Us",
+        "change-language": "Change Language",
+        "change-theme": "Change Theme"
+    },
+    "language": {
+        "english": {
+            "code": "gb",
+            "title": "English"
+        },
+        "spanish": {
+            "code": "es",
+            "title": "Spanish"
+        },
+        "turkish": {
+            "code": "tr",
+            "title": "Turkish"
+        }
+    },
+    "theme": {
+        "light": {
+            "code": "light",
+            "value": "Light"
+        },
+        "dark": {
+            "code": "dark",
+            "value": "Dark"
+        }
+    }
+}

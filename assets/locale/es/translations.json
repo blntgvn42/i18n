@@ -1,0 +1,32 @@
+{
+    "navbar": {
+        "home-page": "Página de inicio",
+        "about-page": "Sobre Nosotras",
+        "change-language": "Cambiar idioma",
+        "change-theme": "Cambiar de tema"
+    },
+    "language": {
+        "english": {
+            "code": "gb",
+            "title": "Inglés"
+        },
+        "spanish": {
+            "code": "es",
+            "title": "Española"
+        },
+        "turkish": {
+            "code": "tr",
+            "title": "Turco"
+        }
+    },
+    "theme": {
+        "light": {
+            "code": "light",
+            "value": "Abierto"
+        },
+        "dark": {
+            "code": "dark",
+            "value": "Oscuro"
+        }
+    }
+}
