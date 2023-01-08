@@ -1,32 +1,38 @@
 {
-    "navbar": {
-        "home-page": "Página de inicio",
-        "about-page": "Sobre Nosotras",
-        "change-language": "Cambiar idioma",
-        "change-theme": "Cambiar de tema"
+  "navbar": {
+    "home-page": "Página de inicio",
+    "about-page": "Sobre Nosotras",
+    "change-language": "Cambiar idioma",
+    "change-theme": "Cambiar de tema",
+    "profile": "Bienvenidas, {{username}}"
+  },
+  "language": {
+    "english": {
+      "code": "gb",
+      "title": "Inglés"
     },
-    "language": {
-        "english": {
-            "code": "gb",
-            "title": "Inglés"
-        },
-        "spanish": {
-            "code": "es",
-            "title": "Española"
-        },
-        "turkish": {
-            "code": "tr",
-            "title": "Turco"
-        }
+    "spanish": {
+      "code": "es",
+      "title": "Española"
     },
-    "theme": {
-        "light": {
-            "code": "light",
-            "value": "Abierto"
-        },
-        "dark": {
-            "code": "dark",
-            "value": "Oscuro"
-        }
+    "turkish": {
+      "code": "tr",
+      "title": "Turco"
     }
+  },
+  "theme": {
+    "light": {
+      "code": "light",
+      "value": "Abierto"
+    },
+    "dark": {
+      "code": "dark",
+      "value": "Oscuro"
+    }
+  },
+  "auth": {
+    "sign-in": "Registrarse",
+    "sign-out": "Desconectar",
+    "sign-up": "Inscribirse"
+  }
 }

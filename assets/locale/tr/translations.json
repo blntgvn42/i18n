@@ -1,32 +1,38 @@
 {
-    "navbar": {
-        "home-page": "Ana Sayfa",
-        "about-page": "Hakkımızda",
-        "change-language": "Dili Değiştir",
-        "change-theme": "Tema Değiştir"
+  "navbar": {
+    "home-page": "Ana Sayfa",
+    "about-page": "Hakkımızda",
+    "change-language": "Dili Değiştir",
+    "change-theme": "Tema Değiştir",
+    "profile": "Merhaba, {{username}}"
+  },
+  "language": {
+    "english": {
+      "code": "gb",
+      "title": "İngilizce"
     },
-    "language": {
-        "english": {
-            "code": "gb",
-            "title": "İngilizce"
-        },
-        "spanish": {
-            "code": "es",
-            "title": "İspanyolca"
-        },
-        "turkish": {
-            "code": "tr",
-            "title": "Türkçe"
-        }
+    "spanish": {
+      "code": "es",
+      "title": "İspanyolca"
     },
-    "theme": {
-        "light": {
-            "code": "light",
-            "value": "Açık"
-        },
-        "dark": {
-            "code": "dark",
-            "value": "Koyu"
-        }
+    "turkish": {
+      "code": "tr",
+      "title": "Türkçe"
     }
+  },
+  "theme": {
+    "light": {
+      "code": "light",
+      "value": "Açık"
+    },
+    "dark": {
+      "code": "dark",
+      "value": "Koyu"
+    }
+  },
+  "auth": {
+    "sign-in": "Giriş Yap",
+    "sign-out": "Çıkış Yap",
+    "sign-up": "Kayıt Ol"
+  }
 }

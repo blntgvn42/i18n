@@ -1,11 +1,13 @@
 import {configureStore} from '@reduxjs/toolkit'
 import languageReducer from './feature/language/languageSlice'
 import themeReducer from './feature/theme/themeSlice'
+import userReducer from './feature/user/userSlice'
 
 export const store = configureStore({
     reducer: {
         language: languageReducer,
-        theme: themeReducer
+        theme: themeReducer,
+        user: userReducer
     },
 })
 

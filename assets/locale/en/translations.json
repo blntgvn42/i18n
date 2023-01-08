@@ -1,32 +1,38 @@
 {
-    "navbar": {
-        "home-page": "Home Page",
-        "about-page": "About Us",
-        "change-language": "Change Language",
-        "change-theme": "Change Theme"
+  "navbar": {
+    "home-page": "Home Page",
+    "about-page": "About Us",
+    "change-language": "Change Language",
+    "change-theme": "Change Theme",
+    "profile": "Hello, {{username}}"
+  },
+  "language": {
+    "english": {
+      "code": "gb",
+      "title": "English"
     },
-    "language": {
-        "english": {
-            "code": "gb",
-            "title": "English"
-        },
-        "spanish": {
-            "code": "es",
-            "title": "Spanish"
-        },
-        "turkish": {
-            "code": "tr",
-            "title": "Turkish"
-        }
+    "spanish": {
+      "code": "es",
+      "title": "Spanish"
     },
-    "theme": {
-        "light": {
-            "code": "light",
-            "value": "Light"
-        },
-        "dark": {
-            "code": "dark",
-            "value": "Dark"
-        }
+    "turkish": {
+      "code": "tr",
+      "title": "Turkish"
     }
+  },
+  "theme": {
+    "light": {
+      "code": "light",
+      "value": "Light"
+    },
+    "dark": {
+      "code": "dark",
+      "value": "Dark"
+    }
+  },
+  "auth": {
+    "sign-in": "Sign In",
+    "sign-out": "Sign Out",
+    "sign-up": "Sign Up"
+  }
 }
