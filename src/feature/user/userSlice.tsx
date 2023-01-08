@@ -14,56 +14,6 @@ const initialState: UserState = {
             userId: faker.datatype.uuid(), avatar: faker.image.avatar(),
             username: "blntgvn42", email: "bulentguven97@hotmail.com",
             password: "bulent1775"
-        },
-        {
-            userId: faker.datatype.uuid(), avatar: faker.image.avatar(),
-            username: faker.internet.userName(), email: faker.internet.email(),
-            password: faker.internet.password()
-        },
-        {
-            userId: faker.datatype.uuid(), avatar: faker.image.avatar(),
-            username: faker.internet.userName(), email: faker.internet.email(),
-            password: faker.internet.password()
-        },
-        {
-            userId: faker.datatype.uuid(), avatar: faker.image.avatar(),
-            username: faker.internet.userName(), email: faker.internet.email(),
-            password: faker.internet.password()
-        },
-        {
-            userId: faker.datatype.uuid(), avatar: faker.image.avatar(),
-            username: faker.internet.userName(), email: faker.internet.email(),
-            password: faker.internet.password()
-        },
-        {
-            userId: faker.datatype.uuid(), avatar: faker.image.avatar(),
-            username: faker.internet.userName(), email: faker.internet.email(),
-            password: faker.internet.password()
-        },
-        {
-            userId: faker.datatype.uuid(), avatar: faker.image.avatar(),
-            username: faker.internet.userName(), email: faker.internet.email(),
-            password: faker.internet.password()
-        },
-        {
-            userId: faker.datatype.uuid(), avatar: faker.image.avatar(),
-            username: faker.internet.userName(), email: faker.internet.email(),
-            password: faker.internet.password()
-        },
-        {
-            userId: faker.datatype.uuid(), avatar: faker.image.avatar(),
-            username: faker.internet.userName(), email: faker.internet.email(),
-            password: faker.internet.password()
-        },
-        {
-            userId: faker.datatype.uuid(), avatar: faker.image.avatar(),
-            username: faker.internet.userName(), email: faker.internet.email(),
-            password: faker.internet.password()
-        },
-        {
-            userId: faker.datatype.uuid(), avatar: faker.image.avatar(),
-            username: faker.internet.userName(), email: faker.internet.email(),
-            password: faker.internet.password()
         }
     ],
     loggedInUser: {} as User
@@ -78,8 +28,7 @@ export const userSlice = createSlice({
             }
         },
         signUp: (state, action: PayloadAction<UserRegisterType>) => {
-            if (state.users.find(user => user.username === action.payload.username || user.email === action.payload.email)) {
-            } else {
+            if (!state.users.find(user => user.username === action.payload.username || user.email === action.payload.email)) {
                 state.users = [...state.users, action.payload]
             }
         },
