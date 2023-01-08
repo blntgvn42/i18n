@@ -10,3 +10,7 @@
 .ant-layout-footer {
     padding-inline: 0 !important;
 }
+
+.mt {
+    margin-top: 1rem;
+}

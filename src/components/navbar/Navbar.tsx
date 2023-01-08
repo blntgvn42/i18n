@@ -2,15 +2,18 @@ import {Menu} from 'antd';
 import MenuItem from 'antd/es/menu/MenuItem';
 import SubMenu from 'antd/es/menu/SubMenu';
 import {useTranslation} from 'react-i18next';
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {changeLanguage} from '../../feature/language/languageSlice';
 import {changeTheme} from '../../feature/theme/themeSlice';
+import {RootState} from "../../store";
+import {signOut} from "../../feature/user/userSlice";
+import {isObjectEmpty} from "../../ts/utils/ObjectUtils";
 
 const Navbar = () => {
     const {t} = useTranslation()
     const dispatch = useDispatch()
-
+    const {loggedInUser} = useSelector((state: RootState) => state.user)
     return (
         <Menu mode='horizontal'>
             <MenuItem>
@@ -45,23 +48,27 @@ const Navbar = () => {
                     {t("theme.dark.value")}
                 </MenuItem>
             </SubMenu>
-            <MenuItem>
-                <Link to="/sign-in">
-                    {t("auth.sign-in")}
-                </Link>
-            </MenuItem>
-            <MenuItem>
-                <Link to="/sign-up">
-                    {t("auth.sign-up")}
-                </Link>
-            </MenuItem>
-            <SubMenu title={t("navbar.profile", {username: "Bülent"})}>
-                <MenuItem>
-                    <Link to="/sign-out">
-                        {t("auth.sign-out")}
-                    </Link>
-                </MenuItem>
-            </SubMenu>
+            {!isObjectEmpty(loggedInUser) ?
+                <>
+                    <MenuItem>
+                        <Link to="/auth/sign-in">
+                            {t("auth.sign-in")}
+                        </Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to="/auth/sign-up">
+                            {t("auth.sign-up")}
+                        </Link>
+                    </MenuItem>
+                </>
+                :
+                <>
+
+                    <SubMenu title={t("navbar.profile", {username: loggedInUser.username})}>
+                        <MenuItem onClick={() => dispatch(signOut())}>{t("auth.sign-out")}</MenuItem>
+                    </SubMenu>
+                </>
+            }
         </Menu>
     );
 };
