@@ -34,5 +34,11 @@
     "sign-in": "Sign In",
     "sign-out": "Sign Out",
     "sign-up": "Sign Up"
+  },
+  "auth-form": {
+    "username": "Username",
+    "email": "Email Address",
+    "password": "Password",
+    "password-confirmation": "Confirm Password"
   }
 }

@@ -34,5 +34,11 @@
     "sign-in": "Registrarse",
     "sign-out": "Desconectar",
     "sign-up": "Inscribirse"
+  },
+  "auth-form": {
+    "username": "Nombre de Usuario",
+    "email": "Dirección de Correo Electrónico",
+    "password": "Contraseña",
+    "password-confirmation": "Confirmación de Contraseña"
   }
 }

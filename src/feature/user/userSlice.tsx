@@ -30,6 +30,7 @@ export const userSlice = createSlice({
         signUp: (state, action: PayloadAction<UserRegisterType>) => {
             if (!state.users.find(user => user.username === action.payload.username || user.email === action.payload.email)) {
                 state.users = [...state.users, action.payload]
+                state.loggedInUser = {...state.users.find(user => user.username === action.payload.username)} as User
             }
         },
         signOut: (state) => {

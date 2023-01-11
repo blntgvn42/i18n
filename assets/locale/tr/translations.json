@@ -34,5 +34,11 @@
     "sign-in": "Giriş Yap",
     "sign-out": "Çıkış Yap",
     "sign-up": "Kayıt Ol"
+  },
+  "auth-form": {
+    "username": "Kullanıcı Adı",
+    "email": "Email Adresi",
+    "password": "Şifre",
+    "password-confirmation": "Şifreyi Tekrarla"
   }
 }
