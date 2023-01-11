@@ -6,11 +6,13 @@ import {signIn} from "../feature/user/userSlice";
 import {RootState} from "../store";
 import {Navigate} from "react-router-dom";
 import {isObjectEmpty} from "../ts/utils/ObjectUtils";
+import {useTranslation} from "react-i18next";
 
 const {Item} = Form;
 const {Password} = Input;
 
 const SignIn = () => {
+    const {t} = useTranslation()
     const dispatch = useDispatch()
     const {loggedInUser} = useSelector((state: RootState) => state.user)
     const formSubmit = async (values: any) => {
@@ -26,11 +28,11 @@ const SignIn = () => {
     } else {
         return (
             <Form name="basic" autoComplete="off" onFinish={formSubmit}>
-                <Item label="Username" name="username">
+                <Item label={t("auth-form.username")} name="username">
                     <Input/>
                 </Item>
 
-                <Item label="Password" name="password">
+                <Item label={t("auth-form.password")} name="password">
                     <Password/>
                 </Item>
 
