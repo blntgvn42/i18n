@@ -31,20 +31,15 @@ const SignUp = () => {
                 <Item label={t("auth-form.username")} name="username">
                     <Input/>
                 </Item>
-
                 <Item label={t("auth-form.email")} name="username">
                     <Input/>
                 </Item>
-
                 <Item label={t("auth-form.password")} name="password">
                     <Password/>
                 </Item>
-
-
                 <Item label={t("auth-form.password-confirmation")} name="passwordConfirmation">
                     <Password/>
                 </Item>
-
                 <Item wrapperCol={{offset: 8, span: 8}}>
                     <Button type="primary" htmlType="submit">
                         Submit
