@@ -1,3 +1,4 @@
+/*COMPONENT WILL NOT BE USED*/
 import React from 'react';
 
 const SignOut = () => {

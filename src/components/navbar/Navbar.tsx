@@ -14,6 +14,7 @@ const Navbar = () => {
     const {t} = useTranslation()
     const dispatch = useDispatch()
     const {loggedInUser} = useSelector((state: RootState) => state.user)
+
     return (
         <Menu mode='horizontal'>
             <MenuItem>
@@ -63,7 +64,6 @@ const Navbar = () => {
                 </>
                 :
                 <>
-
                     <SubMenu title={t("navbar.profile", {username: loggedInUser.username})}>
                         <MenuItem onClick={() => dispatch(signOut())}>{t("auth.sign-out")}</MenuItem>
                     </SubMenu>
