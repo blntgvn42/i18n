@@ -15,6 +15,7 @@ const SignUp = () => {
     const {t} = useTranslation()
     const dispatch = useDispatch()
     const {loggedInUser} = useSelector((state: RootState) => state.user)
+
     const formSubmit = async (values: any) => {
         try {
             const validatedForm = UserRegister.parse(values)
@@ -23,6 +24,7 @@ const SignUp = () => {
             console.error(e)
         }
     }
+
     if (isObjectEmpty(loggedInUser)) {
         return <Navigate to="/"/>
     } else {
@@ -31,7 +33,7 @@ const SignUp = () => {
                 <Item label={t("auth-form.username")} name="username">
                     <Input/>
                 </Item>
-                <Item label={t("auth-form.email")} name="username">
+                <Item label={t("auth-form.email")} name="email">
                     <Input/>
                 </Item>
                 <Item label={t("auth-form.password")} name="password">
