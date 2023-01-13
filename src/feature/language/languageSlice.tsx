@@ -5,7 +5,6 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from 'i18next-http-backend';
 import {initReactI18next} from 'react-i18next';
 
-
 export interface LanguageState {
     langs: string[]
 }
@@ -26,7 +25,7 @@ i18n
             caches: ['cookie']
         },
         backend: {
-            loadPath: '/assets/locale/{{lng}}/translations.json'
+            loadPath: '/locale/{{lng}}/translations.json'
         }
     });
 
