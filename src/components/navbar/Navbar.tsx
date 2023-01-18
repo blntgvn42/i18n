@@ -30,15 +30,15 @@ const Navbar = () => {
             <SubMenu title={t("navbar.change-language")}>
                 <MenuItem onClick={() => dispatch(changeLanguage(t("language.english.code")))}>
                     <span
-                        className={`flag-icon flag-icon-${t("language.english.code")} mx-2`}></span> {t("language.english.title")}
+                        className={`fi fi-${t("language.english.code")} mx-2`}></span> {t("language.english.title")}
                 </MenuItem>
                 <MenuItem onClick={() => dispatch(changeLanguage(t("language.spanish.code")))}>
                     <span
-                        className={`flag-icon flag-icon-${t("language.spanish.code")} mx-2`}></span> {t("language.spanish.title")}
+                        className={`fi fi-${t("language.spanish.code")} mx-2`}></span> {t("language.spanish.title")}
                 </MenuItem>
                 <MenuItem onClick={() => dispatch(changeLanguage(t("language.turkish.code")))}>
                     <span
-                        className={`flag-icon flag-icon-${t("language.turkish.code")} mx-2`}></span> {t("language.turkish.title")}
+                        className={`fi fi-${t("language.turkish.code")} mx-2`}></span> {t("language.turkish.title")}
                 </MenuItem>
             </SubMenu>
             <SubMenu title={t("navbar.change-theme")}>

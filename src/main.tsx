@@ -5,7 +5,7 @@ import {createBrowserRouter, createRoutesFromElements, Link, Route, RouterProvid
 import {store} from './store'
 
 import './index.css'
-import 'flag-icon-css/css/flag-icons.min.css'
+import 'flag-icons/css/flag-icons.min.css'
 
 import Root from "./layouts/Root";
 import {Result} from "antd";
